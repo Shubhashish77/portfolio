@@ -1,8 +1,7 @@
-import { Article, Home, Person } from '@mui/icons-material';
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../images/letter-s.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { mobile } from '../responsive';
 
 const Container = styled.div`
@@ -79,24 +78,21 @@ const NavBar = () => {
               <span>hubhashish</span>
             </Left>
             <Right>
-              <Link to="/">
+              <NavLink to="/">
                 <MenuItem>
-                  {/* <Home style={{ marginRight: "5px" }} /> */}
                   Home
                 </MenuItem>
-              </Link>
-              <Link to="/about">
+              </NavLink>
+              <NavLink to="/about">
                 <MenuItem>
-                  {/* <Person style={{marginRight: "5px"}}/> */}
                   About
                 </MenuItem>
-              </Link>
-              <Link to="/blogs">
+              </NavLink>
+              <NavLink to="/blogs">
                 <MenuItem>
-                  {/* <Article style={{marginRight: "5px"}}/> */}
                   Blog
                 </MenuItem> 
-              </Link>
+              </NavLink>
             </Right>
         </Wrapper>
     </Container>

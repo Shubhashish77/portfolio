@@ -17,7 +17,7 @@ const Blog = () => {
   }, []); 
 
   return (
-    <div style={{color: "white", padding: "50px"}}>
+    <div style={{color: "white"}}>
       <Markdown 
         options={{
           overrides: {

@@ -45,7 +45,7 @@ setTimeout(function cb() {
   console.log("Callback");
 }, 5000);
 
-fetch("https://api.netflix.com")
+fetch("{https}://api.netflix.com")
 .then(function cbNet() {
   console.log("let have fun with Netflix")
 });

@@ -10,10 +10,11 @@ const Container = styled.div`
 const Wrapper = styled.div`
    display: flex;
    flex-direction: column;
+   color: #fff;
 `;
 
 const Card = styled.div`
-  ${'' /* padding-top: 15px; */}
+  padding-top: 15px;
   width: 33%;
   display: flex;
   flex-direction: column;
@@ -31,15 +32,12 @@ const Image = styled.img`
 `;
 
 const Title = styled.div`
-   padding: 0 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: #fff;
-   font-size: ${props => props.size ? props.size: "25px"};
-   font-weight: ${props => props.weight ? props.weight : 400}
+   margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  border-bottom: 2px solid #7001AF; 
 `;
-// ${ (props => props.color) }
+
 const Blogs = () => {
 
   const navigate = useNavigate();
@@ -56,9 +54,9 @@ const Blogs = () => {
             {Blogdata.map(item => (
                 <Card key={item.id} onClick={()=>navigateToPage(item)}>
                    <Image src={item.icon}/>
-                   <Title>
+                   <p>
                       {item.title}
-                   </Title>
+                   </p>
                 </Card>
             ))}
         </Wrapper>
