@@ -9,13 +9,11 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: auto;
-
   ${'' /* background-color: pink; */}
 `;
 const Image = styled.img`
     width: 80%;
-    height: 300px;
+    height: 50%;
     border-radius: 25px;
     border: 2px solid #7001AF;
     object-fit: cover;
@@ -45,7 +43,7 @@ const SocialIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
+  margin-right: 15px;
   &: hover{
     background-color: #${(props => props.color)};
   }

@@ -6,7 +6,6 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  padding: 90px;
   color: white;
   display: flex;
   flex-direction: column;

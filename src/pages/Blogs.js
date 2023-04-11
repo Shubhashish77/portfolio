@@ -4,7 +4,7 @@ import { Blogdata } from '../data';
 import { useNavigate } from 'react-router-dom';
 
 const Container = styled.div`
-  padding: 35px;
+  ${'' /* padding: 35px; */}
 `;
 
 const Wrapper = styled.div`
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `;
 
 const Card = styled.div`
-  padding-top: 15px;
+  ${'' /* padding-top: 15px; */}
   width: 33%;
   display: flex;
   flex-direction: column;
