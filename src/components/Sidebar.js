@@ -58,6 +58,11 @@ const Button= styled.button`
   color: white;
 `;
 
+const Link = styled.a`
+  color: #fff;
+  text-decoration: none;
+`;
+
 const Sidebar = () => {
   return (
     <Container>
@@ -78,7 +83,15 @@ const Sidebar = () => {
             <LinkedIn />
         </SocialIcon>              
       </SocialMedia>
-      <Button>Download CV</Button>
+      <Button>
+        <Link 
+          href="https://drive.google.com/file/d/1DdFJsgq3gnnLUaFWIYzxYpcHA-LkjFKZ/view?usp=share_link"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Download CV
+        </Link>
+      </Button>
     </Container>
   )
 }
