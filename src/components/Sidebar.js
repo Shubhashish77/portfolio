@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import shubhashish from '../images/shubhashish.jpg';
-import { Facebook, Instagram, LinkedIn, Twitter } from '@mui/icons-material';
+import { Facebook, GitHub, Instagram, LinkedIn, Twitter } from '@mui/icons-material';
 
 const Container = styled.div`
   display: flex;
@@ -61,6 +61,9 @@ const Button= styled.button`
 const Link = styled.a`
   color: #fff;
   text-decoration: none;
+  &: hover{
+    color #fff;
+  }
 `;
 
 const Sidebar = () => {
@@ -70,17 +73,29 @@ const Sidebar = () => {
           <Title>Shubhashish</Title>
           <Tag>Web Developer</Tag>
       <SocialMedia>
-        <SocialIcon color="385999">
-            <Facebook />
+        <SocialIcon color="000000">
+            <Link
+              href="https://github.com/Shubhashish77"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <GitHub />
+            </Link>
         </SocialIcon>
-        <SocialIcon color="E4405F">
+        {/* <SocialIcon color="E4405F">
             <Instagram />
-        </SocialIcon>
-        <SocialIcon color="55ACEE">
+        </SocialIcon> */}
+        {/* <SocialIcon color="55ACEE">
             <Twitter />
-        </SocialIcon>
+        </SocialIcon> */}
         <SocialIcon color="0072b1 ">
-            <LinkedIn />
+            <Link
+              href="https://linkedin.com/in/shubhashish-8a0636166/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <LinkedIn />
+            </Link> 
         </SocialIcon>              
       </SocialMedia>
       <Button>

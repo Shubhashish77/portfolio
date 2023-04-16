@@ -44,6 +44,7 @@ const Image = styled.img`
   height: 60px;
   background-color: #fff;
   border-radius: 50%;
+  transform: rotate(15deg);
   ${mobile({ height: "40px", width: "40px" })}
 `;
 
