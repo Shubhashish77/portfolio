@@ -70,32 +70,39 @@ const MenuItem = styled.div`
   ${mobile({ fontSize: "20px", marginLeft: "10px", padding: "5px" })}
 `;
 
+const Navlink = styled(NavLink)`
+  &.active {
+  border-radius: 25px;
+  background-color: #444444;
+  }
+`;
+
 const NavBar = () => {
   return (
     <Container>
-        <Wrapper>
-            <Left>
-              <Image src={logo}/>
-              <span>hubhashish</span>
-            </Left>
-            <Right>
-              <NavLink to="/">
-                <MenuItem>
-                  Home
-                </MenuItem>
-              </NavLink>
-              <NavLink to="/about">
-                <MenuItem>
-                  About
-                </MenuItem>
-              </NavLink>
-              <NavLink to="/blogs">
-                <MenuItem>
-                  Blog
-                </MenuItem> 
-              </NavLink>
-            </Right>
-        </Wrapper>
+      <Wrapper>
+        <Left>
+          <Image src={logo} />
+          <span>hubhashish</span>
+        </Left>
+        <Right>
+          <Navlink to="/">
+            <MenuItem>
+              Home
+            </MenuItem>
+          </Navlink>
+          <Navlink to="/about">
+            <MenuItem>
+              About
+            </MenuItem>
+          </Navlink>
+          <Navlink to="/blogs">
+            <MenuItem>
+              Blog
+            </MenuItem>
+          </Navlink>
+        </Right>
+      </Wrapper>
     </Container>
   )
 }
